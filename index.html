@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test page</title>
+        <link href="styles/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/kny4qxz.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script src="./scripts/filter.js"></script>
+    </head>
+    <body>
+        <div class="header" style="margin-top: 0; padding-top: 0;">
+            <div class="title" > Andrew Pan @ A&M</div>
+            <div class="intro">
+                Hello, I'm a senior at Texas A&M University studying statistics and computer science. 
+                I am currently looking for a fulltime job as a data scientist or software engineer.
+                I am most interested in healthcare and finance, and plan to pursue a graduate degree in the near future.
+            </div>
+        </div>
+
+        <div class = "buttonrow">
+            <button class='linkedin' onclick="window.open('https://www.linkedin.com/in/andrew-pan');" value="Go to my LinkedIn" >LinkedIn</button>
+            <button class='github' onclick="window.open('https://github.com/pannyandrew');" value="Go to my GitHub">GitHub</button>
+            <button class='twitter' onclick="window.open('https://twitter.com/pannyandreuu');" value="Go to my Twitter">Twitter</button>
+        </div>
+
+        <div class="project">
+            <div class="projectheader">
+                <div>Projects</div>
+                
+                <div class="button-group filters-button-group">
+                    <button class="projectbutton is-checked" data-filter="*">Show All</button>
+                    <button class="projectbutton healthcare-button" data-filter=".healthcare">Healthcare</button>
+                    <button class="projectbutton finance-button" data-filter=".finance">Finance</button>
+                    <button class="projectbutton misc-button" data-filter=".misc">misc</button>
+                </div>
+            </div>
+
+            <div class="projectcontent">
+                <div class="element-item finance">
+                    <div class="projectline">
+                      <div class="projectlabel name">A4</div>
+                      <div class="projectinfo namelabel">
+                        <div class="tags visuallabel">Data Visualization</div>
+                        <div class="tags statlabel">Statistics</div>
+                      </div>
+                    </div>
+                    <div class="projectline">
+                      <div class="projectlabel">Year</div>
+                      <div class="projectinfo">2022</div>
+                    </div>
+                    <div class="projectline">
+                      <div class="projectlabel">url</div>
+                      <div class="projectinfo">Coming soon</div>
+                    </div>
+                    <div class="projectline lastline">
+                      <div class="projectlabel">Project</div>
+                      <div class="projectinfo">
+                        Did statistical analysis on Covid-19's effect on American economy and government interventions 
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="element-item healthcare">
+                    <div class="projectline">
+                      <div class="projectlabel name">A3</div>
+                      <div class="projectinfo namelabel">
+                        <div class="tags statlabel">Statistics</div>
+                      </div>
+                    </div>
+                    <div class="projectline">
+                      <div class="projectlabel">Year</div>
+                      <div class="projectinfo">2021</div>
+                    </div>
+                    <div class="projectline">
+                      <div class="projectlabel">url</div>
+                      <div class="projectinfo">N/A</div>
+                    </div>
+                    <div class="projectline lastline">
+                      <div class="projectlabel">Project</div>
+                      <div class="projectinfo">
+                        Researched mis-classification rates for prostate cancer in the SEERS dataset. 
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="element-item healthcare ">
+                    <div class="projectline">
+                      <div class="projectlabel name">A2</div>
+                      <div class="projectinfo namelabel">
+                        <div class="tags machinelabel">Machine Learning</div>
+                        <div class="tags statlabel">Statistics</div>
+                      </div>
+                    </div>
+                    <div class="projectline">
+                      <div class="projectlabel">Year</div>
+                      <div class="projectinfo">2021</div>
+                    </div>
+                    <div class="projectline">
+                      <div class="projectlabel">url</div>
+                      <div class="projectinfo">Coming soon</div>
+                    </div>
+                    <div class="projectline lastline">
+                      <div class="projectlabel">Project</div>
+                      <div class="projectinfo">
+                        Conducted research to classify and predict stage of cancer based on MI-RNA expression levels.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="element-item misc">
+                    <div class="projectline">
+                      <div class="projectlabel name">A1</div>
+                      <div class="projectinfo namelabel">
+                        <div class="tags statlabel">Statistics</div>
+                      </div>
+                    </div>
+                    <div class="projectline">
+                      <div class="projectlabel">Year</div>
+                      <div class="projectinfo">2021</div>
+                    </div>
+                    <div class="projectline">
+                      <div class="projectlabel">url</div>
+                      <div class="projectinfo" onclick="window.open('https://github.com/jiayiwang1017/mfdacov-code')">Github</div>
+                    </div>
+                    <div class="projectline lastline">
+                      <div class="projectlabel">Project</div>
+                      <div class="projectinfo">
+                        Conducted research in kernel-based covariate functional balancing, empirical calibration balance weighting, and minimal weights.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="element-item misc">
+                    <div class="projectline">
+                      <div class="projectlabel name">P2</div>
+                      <div class="projectinfo namelabel">
+                        <div class="tags machinelabel">Machine Learning</div>
+                        <div class="tags webdevlabel">Web Dev</div>
+                      </div>
+                    </div>
+                    <div class="projectline">
+                      <div class="projectlabel">Year</div>
+                      <div class="projectinfo">2020</div>
+                    </div>
+                    <div class="projectline">
+                      <div class="projectlabel">url</div>
+                      <div class="projectinfo" onclick="window.open('https://github.com/rush0k/hacktx');">Github</div>
+                    </div>
+                    <div class="projectline lastline">
+                      <div class="projectlabel">Project</div>
+                      <div class="projectinfo">
+                        Developed a regression algorithm to predict the amount of food waste a restaurant will produce
+                        and a feature that would connect restaurants with individuals in search of food.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="element-item finance">
+                    <div class="projectline">
+                      <div class="projectlabel name">P1</div>
+                      <div class="projectinfo namelabel">
+                        <div class="tags webdevlabel">Web Dev</div>
+                      </div>
+                    </div>
+                    <div class="projectline">
+                      <div class="projectlabel">Year</div>
+                      <div class="projectinfo">2019</div>
+                    </div>
+                    <div class="projectline">
+                      <div class="projectlabel">url</div>
+                      <div class="projectinfo">N/A</div>
+                    </div>
+                    <div class="projectline lastline">
+                      <div class="projectlabel">Project</div>
+                      <div class="projectinfo">
+                        Web-scraped stock statistics and news, and uploaded the information onto a web app.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
